@@ -1,0 +1,30 @@
+* {
+	&,
+	&::before,
+	&::after {
+		box-sizing: border-box;
+	}
+}
+a {
+	color: var(--link-color);
+	text-decoration: none;
+	&:hover {
+		color: var(--link-hover-color);
+		text-decoration: underline;
+	}
+}
+img,
+video,
+audio,
+iframe,
+object {
+	max-width: 100%;
+}
+ul {
+	li {
+		margin-bottom: 5px;
+		> ul {
+			margin-top: 5px;
+		}
+	}
+}
