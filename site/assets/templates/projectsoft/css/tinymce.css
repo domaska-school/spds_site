@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "Domashka";
-  src: url("/assets/templates/projectsoft/fonts/domahka.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/domahka.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/domahka.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/domashka.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/domashka.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/domashka.ttf?v1.0.0") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
