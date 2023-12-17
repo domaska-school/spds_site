@@ -25,7 +25,7 @@ site/*.ico
 site/*.xml
 site/*.webmanifest
 
-site/sample*.txt
+site/*.txt
 site/assets/templates/index.html
 site/vendor
 site/manager
