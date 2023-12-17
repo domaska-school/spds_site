@@ -1,10 +1,12 @@
 module.exports = function(grunt) {
-	const sass = require('node-sass');
+	let PACK = grunt.file.readJSON('package.json');
 	require('dotenv').config();
-	const DEBUG = parseInt(process.env.DEBUG) || false;
+	const sass = require('node-sass'),
+		DEBUG = parseInt(process.env.DEBUG) || false,
+		VERSION = process.env.VERSION == undefined ? PACK.font_version : process.env.VERSION;
 	var fs = require('fs'),
 		chalk = require('chalk'),
-		PACK = grunt.file.readJSON('package.json'),
+		//PACK = grunt.file.readJSON('package.json'),
 		uniqid = function () {
 			if(DEBUG){
 				var md5 = require('md5');
@@ -12,7 +14,7 @@ module.exports = function(grunt) {
 				grunt.verbose.writeln("Generate hash: " + chalk.cyan(result) + " >>> OK");
 				return result;
 			}
-			return `v${PACK.font_version}`;
+			return `v${VERSION}`;
 		};
 	
 	String.prototype.hashCode = function() {
@@ -25,13 +27,16 @@ module.exports = function(grunt) {
 		}
 		return hash;
 	};
-	
+
 	var gc = {
 			fontvers: `${PACK.font_version}`,
 			assets: "assets/templates/projectsoft",
 			gosave: "site/assets/templates/projectsoft",
 		},
 		NpmImportPlugin = require("less-plugin-npm-import");
+	
+	console.log(chalk.yellow.bold(`VRESION BUILD ${VERSION}`));
+
 	require('load-grunt-tasks')(grunt);
 	require('time-grunt')(grunt);
 	grunt.initConfig({
@@ -453,8 +458,8 @@ module.exports = function(grunt) {
 			serv: {
 				options: {
 					client: false,
-					pretty: DEBUG ? '\t' : '',
-					separator:  DEBUG? '\n' : '',
+					pretty: DEBUG ? '\t' : '\t',
+					separator:  DEBUG? '\n' : '\n',
 					data: function(dest, src) {
 						return {
 							"base": "[(site_url)]",
@@ -481,8 +486,8 @@ module.exports = function(grunt) {
 			tpl: {
 				options: {
 					client: false,
-					pretty: DEBUG ? '\t' : '',
-					separator:  DEBUG? '\n' : '',
+					pretty: DEBUG ? '\t' : '\t',
+					separator:  DEBUG? '\n' : '\n',
 					data: function(dest, src) {
 						return {
 							"base": "[(site_url)]",
