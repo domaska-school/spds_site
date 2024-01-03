@@ -6,7 +6,7 @@
 	"font_version": "1.0.0",
 	"scripts": {
 		"test": "npm i --legacy-peer-deps && bower install",
-		"build": "grunt -v def",
+		"build": "grunt -v build",
 		"default": "grunt -v",
 		"watch": "grunt -v watch"
 	},

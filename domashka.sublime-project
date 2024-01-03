@@ -20,9 +20,16 @@
 	},
 	"build_systems": [
 		{
-			"name": "Полная сборка проекта",
+			"name": "Запуск проекта",
 			"working_dir": "${project_path}",
-			"shell_cmd": "npm run build"
+			"cmd": ["start", "grunt", "-v", "build"],
+			"shell": true
+		},
+		{
+			"name": "Генерация Favicon",
+			"working_dir": "${project_path}",
+			"cmd": ["start", "grunt", "-v", "favicon"],
+			"shell": true
 		},
 		{
 			"name": "Запуск полной сборки проекта",

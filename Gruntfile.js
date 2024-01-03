@@ -49,20 +49,26 @@ module.exports = function(grunt) {
 			all: [
 				'test/',
 				'tests/',
-				'site/html_code.html'
+				'site/html_code.html',
+				gc.gosave
 			],
 			favicon: [
 				'site/*.ico',
 				'site/*.png',
 				'site/*svg',
 				'site/*.xml',
-				'site/*.webmanifest'
+				'site/*.webmanifest',
+				'site/html_code.html'
 			],
-			templates: [
+			build: [
 				'test/',
 				'tests/',
 				'site/html_code.html',
-				gc.gosave
+				gc.gosave + "/css/",
+				gc.gosave + "/images/",
+				gc.gosave + "/js/",
+				gc.gosave + "/tpl/",
+				gc.gosave + "/*.html"
 			]
 		},
 		realFavicon: {
@@ -127,8 +133,8 @@ module.exports = function(grunt) {
 						scalingAlgorithm: 'Mitchell',
 						errorOnImageTooSmall: false,
 						readmeFile: false,
-						// htmlCodeFile: true,
-						htmlCodeFile: false,
+						htmlCodeFile: true,
+						// htmlCodeFile: false,
 						usePathAsIs: false
 					}
 				}
@@ -142,7 +148,6 @@ module.exports = function(grunt) {
 				src: [
 					'bower_components/jquery/dist/jquery.js',
 					"bower_components/fancybox/src/js/core.js",
-					//"bower_components/fancybox/src/js/media.js",
 					"src/js/fancybox/media.js",
 					"bower_components/fancybox/src/js/guestures.js",
 					"bower_components/fancybox/src/js/slideshow.js",
@@ -466,10 +471,7 @@ module.exports = function(grunt) {
 							"tem_path" : "/assets/templates/projectsoft",
 							"img_path" : "assets/templates/projectsoft/images/",
 							"site_name": "[(site_name)]",
-							"hash": uniqid(),
-							"hash_css": uniqid(),
-							"hash_js": uniqid(),
-							"hash_appjs": uniqid(),
+							"hash": uniqid()
 						}
 					}
 				},
@@ -508,59 +510,9 @@ module.exports = function(grunt) {
 					}
 				]
 			}
-		},
-		watch: {
-			options: {
-				livereload: true,
-			},
-			less: {
-				files: [
-					'src/less/**/*.*',
-				],
-				tasks: ["clean:all", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "pug"]
-			},
-			js: {
-				files: [
-					'src/js/**/*.*',
-				],
-				tasks: ["clean:all", "concat", "uglify", "copy:js", "pug"]
-			},
-			pug: {
-				files: [
-					'src/pug/**/*.*',
-				],
-				tasks: ["clean:all", "pug"]
-			},
-			images: {
-				files: [
-					'src/images/**/*.*',
-				],
-				tasks: ["imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "pug"]
-			},
-			fonts : {
-				files: [
-					'src/fonts/**/*.*',
-				],
-				tasks: ["clean:all", "ttf2woff", "ttf2woff2", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy:fonts", "pug"]
-			},
-			//glyph : {
-			//	files: [
-			//		'src/glyph/**/*.*',
-			//	],
-			//	tasks: ["clean:all", "webfont", "ttf2woff", "ttf2woff2", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy:fonts", "pug"]
-			//}
 		}
 	});
-	grunt.registerTask('favicon',	["clean", "realFavicon"]);
-	grunt.registerTask('default',	["clean:templates", "concat", "uglify", "webfont", "ttf2woff", "ttf2woff2", "imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy", "pug"]);
-	grunt.registerTask('def',		["clean:templates", "concat", "uglify", "ttf2woff", "ttf2woff2", "imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy", "pug"]);
-	grunt.registerTask('dev',		["watch"]);
-	grunt.registerTask('css',		["clean:all", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "pug"]);
-	grunt.registerTask('images',	["imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "pug"]);
-	grunt.registerTask('js',		["clean:all", "concat", "uglify", "copy:js", "pug"]);
-	grunt.registerTask('glyph',		["clean:all", "webfont", "ttf2woff", "ttf2woff2", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy:fonts", "pug"]);
-	grunt.registerTask('fonts',		["clean:all", "ttf2woff", "ttf2woff2", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy:fonts", "pug"]);
-	grunt.registerTask('html',		["clean:all", "pug"]);
-	grunt.registerTask('speed',		["clean:all", "concat", "uglify", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy", "pug"]);
-	grunt.registerTask('work',		["clean:all", "concat", "uglify", "imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy", "pug"]);
+	grunt.registerTask('default',   ["clean:all", "concat", "uglify", "webfont", "ttf2woff", "ttf2woff2", "imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy", "pug"]);
+	grunt.registerTask('favicon',   ["clean:favicon", "realFavicon"]);
+	grunt.registerTask('build',	    ["clean:build", "concat", "uglify", "imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy", "pug"]);
 }

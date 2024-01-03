@@ -1,0 +1,23 @@
+@font-width-count: 900;
+.generate-lato(@i: 100) when (@i =< @font-width-count) {
+	@font-face {
+		font-family: "Lato";
+		src: url("@{fontpath}/@{i}-lato-italic.woff?@{hashes}") format("woff"),
+			url("@{fontpath}/@{i}-lato-italic.woff2?@{hashes}") format("woff2"),
+			url("@{fontpath}/@{i}-lato-italic.ttf?@{hashes}") format("truetype");
+		font-weight: @i;
+		font-style: italic;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: "Lato";
+		src: url("@{fontpath}/@{i}-lato.woff?@{hashes}") format("woff"),
+			url("@{fontpath}/@{i}-lato.woff2?@{hashes}") format("woff2"),
+			url("@{fontpath}/@{i}-lato.ttf?@{hashes}") format("truetype");
+		font-weight: @i;
+		font-style: normal;
+		font-display: swap;
+	}
+	.generate-lato(@i + 100);
+}
+.generate-lato();

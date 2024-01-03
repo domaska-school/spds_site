@@ -1,7 +1,15 @@
 doctype html
 html(dir="ltr" lang="ru" prefix="og: http://ogp.me/ns#")
-	head
-		title
-			|[*meta_title*]
+	include inc/head.pug
 	body
-		|[*content*]
+		.page
+			.page-eye
+				|Eye
+			.page-top
+				|Top bar
+			.page-header
+				|Header
+			.page-main
+				|[*content*]
+			.page-footer
+				|Footer
