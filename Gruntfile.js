@@ -3,7 +3,35 @@ module.exports = function(grunt) {
 	require('dotenv').config();
 	const sass = require('node-sass'),
 		DEBUG = parseInt(process.env.DEBUG) || false,
-		VERSION = process.env.VERSION == undefined ? PACK.font_version : process.env.VERSION;
+		VERSION = process.env.VERSION == undefined ? PACK.font_version : process.env.VERSION,
+		domain = `domashka.school`,
+		port = `http`,
+		domain_url = `${port}://${domain}`,
+		robotsTxt = `User-agent: *
+Disallow: /assets/backup/
+Disallow: /assets/cache/
+Disallow: /assets/docs/
+Disallow: /assets/export/
+Disallow: /assets/import/
+Disallow: /assets/modules/
+Disallow: /assets/plugins/
+Disallow: /assets/snippets/
+Disallow: /assets/packages/ 
+Disallow: /assets/tvs/
+Disallow: /install/
+
+Allow: /assets/cache/images/
+Allow: /assets/modules/*.css
+Allow: /assets/modules/*.js
+Allow: /assets/plugins/*.css
+Allow: /assets/plugins/*.js
+Allow: /assets/snippets/*.css
+Allow: /assets/snippets/*.js
+
+Host: ${domain}
+
+Sitemap: ${port}://${domain}/sitemap.xml
+`;
 	var fs = require('fs'),
 		chalk = require('chalk'),
 		//PACK = grunt.file.readJSON('package.json'),
@@ -38,6 +66,14 @@ module.exports = function(grunt) {
 	console.log(chalk.yellow.bold(`VRESION BUILD ${VERSION}`));
 
 	require('load-grunt-tasks')(grunt);
+
+	grunt.registerMultiTask('robots', function() {
+		var done = this.async();
+		fs.writeFileSync(__dirname + '/site/robots.txt', robotsTxt);
+		grunt.log.ok(`Write file robots.txt`);
+		return done();
+  	});
+
 	require('time-grunt')(grunt);
 	grunt.initConfig({
 		globalConfig : gc,
@@ -76,7 +112,7 @@ module.exports = function(grunt) {
 				src: 'src/favicon/favicon.png',
 				dest: 'site/',
 				options: {
-					iconsPath: 'http://domashka.school',
+					iconsPath: domain,
 					//html: [ 'favicons.txt' ],
 					design: {
 						ios: {
@@ -510,9 +546,12 @@ module.exports = function(grunt) {
 					}
 				]
 			}
+		},
+		robots: {
+			default: {}
 		}
 	});
-	grunt.registerTask('default',   ["clean:all", "concat", "uglify", "webfont", "ttf2woff", "ttf2woff2", "imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy", "pug"]);
+	grunt.registerTask('default',   ["clean:all", "robots", "concat", "uglify", "webfont", "ttf2woff", "ttf2woff2", "imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy", "pug"]);
 	grunt.registerTask('favicon',   ["clean:favicon", "realFavicon"]);
-	grunt.registerTask('build',	    ["clean:build", "concat", "uglify", "imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy", "pug"]);
+	grunt.registerTask('build',	    ["clean:build", "robots", "concat", "uglify", "imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy", "pug"]);
 }
