@@ -118,7 +118,7 @@ Sitemap: ${port}://${domain}/sitemap.xml
 				src: 'src/favicon/favicon.png',
 				dest: 'site/',
 				options: {
-					iconsPath: domAin,
+					iconsPath: domain_url,
 					//html: [ 'favicons.txt' ],
 					design: {
 						ios: {

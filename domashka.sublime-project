@@ -22,19 +22,19 @@
 		{
 			"name": "Запуск проекта",
 			"working_dir": "${project_path}",
-			"cmd": ["start", "grunt", "-v", "build"],
+			"cmd": ["start", "pnpm", "build"],
 			"shell": true
 		},
 		{
 			"name": "Генерация Favicon",
 			"working_dir": "${project_path}",
-			"cmd": ["start", "grunt", "-v", "favicon"],
+			"cmd": ["start", "pnpm", "favicon"],
 			"shell": true
 		},
 		{
 			"name": "Запуск полной сборки проекта",
 			"working_dir": "${project_path}",
-			"cmd": ["start", "grunt", "-v"],
+			"cmd": ["start", "pnpm", "default"],
 			"shell": true
 		},
 	]

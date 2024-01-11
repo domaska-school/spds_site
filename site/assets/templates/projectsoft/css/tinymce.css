@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: "SPDS-Domashka";
-  src: url("/assets/templates/projectsoft/fonts/domashka.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/domashka.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/domashka.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/domashka.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/domashka.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/domashka.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -309,21 +309,21 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url("/assets/templates/projectsoft/fonts/ptsans-italic.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/ptsans-italic.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/ptsans-italic.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/ptsans-italic.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/ptsans-italic.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/ptsans-italic.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("/assets/templates/projectsoft/fonts/ptsans-bolditalic.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/ptsans-bolditalic.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/ptsans-bolditalic.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/ptsans-bolditalic.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/ptsans-bolditalic.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/ptsans-bolditalic.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("/assets/templates/projectsoft/fonts/ptsans-regular.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/ptsans-regular.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/ptsans-regular.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/ptsans-regular.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/ptsans-regular.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/ptsans-regular.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -331,14 +331,14 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url("/assets/templates/projectsoft/fonts/ptsans-bold.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/ptsans-bold.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/ptsans-bold.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/ptsans-bold.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/ptsans-bold.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/ptsans-bold.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/100-lato-italic.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/100-lato-italic.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/100-lato-italic.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/100-lato-italic.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/100-lato-italic.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/100-lato-italic.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
@@ -346,7 +346,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/100-lato.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/100-lato.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/100-lato.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/100-lato.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/100-lato.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/100-lato.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -354,7 +354,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/200-lato-italic.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/200-lato-italic.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/200-lato-italic.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/200-lato-italic.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/200-lato-italic.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/200-lato-italic.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 200;
   font-style: italic;
   font-display: swap;
@@ -362,7 +362,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/200-lato.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/200-lato.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/200-lato.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/200-lato.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/200-lato.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/200-lato.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -370,7 +370,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/300-lato-italic.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/300-lato-italic.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/300-lato-italic.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/300-lato-italic.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/300-lato-italic.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/300-lato-italic.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -378,7 +378,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/300-lato.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/300-lato.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/300-lato.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/300-lato.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/300-lato.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/300-lato.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -386,7 +386,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/400-lato-italic.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/400-lato-italic.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/400-lato-italic.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/400-lato-italic.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/400-lato-italic.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/400-lato-italic.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -394,7 +394,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/400-lato.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/400-lato.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/400-lato.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/400-lato.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/400-lato.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/400-lato.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -402,7 +402,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/500-lato-italic.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/500-lato-italic.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/500-lato-italic.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/500-lato-italic.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/500-lato-italic.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/500-lato-italic.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -410,7 +410,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/500-lato.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/500-lato.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/500-lato.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/500-lato.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/500-lato.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/500-lato.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -418,7 +418,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/600-lato-italic.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/600-lato-italic.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/600-lato-italic.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/600-lato-italic.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/600-lato-italic.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/600-lato-italic.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -426,7 +426,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/600-lato.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/600-lato.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/600-lato.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/600-lato.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/600-lato.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/600-lato.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -434,7 +434,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/700-lato-italic.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/700-lato-italic.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/700-lato-italic.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/700-lato-italic.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/700-lato-italic.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/700-lato-italic.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -442,7 +442,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/700-lato.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/700-lato.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/700-lato.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/700-lato.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/700-lato.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/700-lato.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -450,7 +450,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/800-lato-italic.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/800-lato-italic.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/800-lato-italic.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/800-lato-italic.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/800-lato-italic.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/800-lato-italic.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 800;
   font-style: italic;
   font-display: swap;
@@ -458,7 +458,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/800-lato.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/800-lato.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/800-lato.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/800-lato.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/800-lato.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/800-lato.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -466,7 +466,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/900-lato-italic.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/900-lato-italic.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/900-lato-italic.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/900-lato-italic.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/900-lato-italic.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/900-lato-italic.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -474,7 +474,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("/assets/templates/projectsoft/fonts/900-lato.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/900-lato.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/900-lato.ttf?v1.0.0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/900-lato.woff?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff"), url("/assets/templates/projectsoft/fonts/900-lato.woff2?bda8d9ce2dcf2b8825732ec4aef309c3") format("woff2"), url("/assets/templates/projectsoft/fonts/900-lato.ttf?bda8d9ce2dcf2b8825732ec4aef309c3") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -482,6 +482,10 @@
 
 body {
   font-family: var(--font-emoji);
+}
+
+body > div {
+  font-family: var(--font-serif);
 }
 html {
   font-family: sans-serif;
@@ -2501,9 +2505,46 @@ h2,
 h3,
 h4,
 h5,
+h6 {
+  font-family: var(--font-sans-serif);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
 h6,
-strong,
-b {
+.h1 strong,
+.h2 strong,
+.h3 strong,
+.h4 strong,
+.h5 strong,
+.h6 strong,
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong,
+.h1 b,
+.h2 b,
+.h3 b,
+.h4 b,
+.h5 b,
+.h6 b,
+h1 b,
+h2 b,
+h3 b,
+h4 b,
+h5 b,
+h6 b {
   font-weight: 600;
 }
 

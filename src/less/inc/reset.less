@@ -33,9 +33,12 @@ ul {
 	}
 }
 .h1, .h2, .h3, .h4, .h5, .h6,
-h1, h2, h3, h4, h5, h6,
-strong, b {
-	font-weight: 600;
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-sans-serif);
+	&,
+	strong, b {
+		font-weight: 600;
+	}
 }
 .emoji {
 	font-family: var(--font-emoji);

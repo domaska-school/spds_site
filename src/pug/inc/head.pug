@@ -40,18 +40,6 @@ head
 	meta(name="description" content="[*desc:notags:strip*]")
 	meta(name="keywords" content="[*keyw:notags:strip*]")
 	meta(name="author" content="[(site_name)]")
-	// /Page SEO
-	// Style
-	link(type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?" + hash)
-	//link(type="text/css" rel="stylesheet" href="[(site_url)]css.css?" + hash)
-	// /Style
-	// RSS
-	link(rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]rss.xml")
-	// /RSS
-	|<@IF:[*id:is(2)*]>
-	// Canonical
-	link(rel="canonical" href="[(site_url)][~[*id*]~]")
-	|<@ENDIF>
 	// Open Graph
 	meta(name="og:url" content="[(site_url)][~[*id*]~]")
 	meta(property="og:type" content="website")
@@ -59,3 +47,17 @@ head
 	meta(name="og:description" content="[*desc:notags:strip*]")
 	|[[ogImage]]
 	// /Open Graph
+	// /Page SEO
+	// Style
+	link(type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?" + hash)
+	link(type="text/css" rel="stylesheet" href="[(site_url)]css.css?" + hash)
+	// /Style
+	// RSS
+	link(rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]rss.xml")
+	// /RSS
+	|
+	|<@IF:[*id:is(2)*]>
+	// Canonical
+	link(rel="canonical" href="[(site_url)][~[*id*]~]")
+	// /Canonical
+	|<@ENDIF>
