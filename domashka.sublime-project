@@ -20,6 +20,12 @@
 	},
 	"build_systems": [
 		{
+			"name": "Запуск полной сборки проекта",
+			"working_dir": "${project_path}",
+			"cmd": ["start", "pnpm", "default"],
+			"shell": true
+		},
+		{
 			"name": "Запуск проекта",
 			"working_dir": "${project_path}",
 			"cmd": ["start", "pnpm", "build"],
@@ -30,12 +36,6 @@
 			"working_dir": "${project_path}",
 			"cmd": ["start", "pnpm", "favicon"],
 			"shell": true
-		},
-		{
-			"name": "Запуск полной сборки проекта",
-			"working_dir": "${project_path}",
-			"cmd": ["start", "pnpm", "default"],
-			"shell": true
-		},
+		}
 	]
 }
