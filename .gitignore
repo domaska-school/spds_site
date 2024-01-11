@@ -4,14 +4,22 @@ temp
 test
 tests
 tmp
+site/*.*
+favicons.txt
+*.txt
+**/*.txt
+*-lock.yaml
+
 # sublime
 *.sublime-workspace
+
 # dotenv environment variable files
 .env
 .env.development.local
 .env.test.local
 .env.production.local
 .env.local
+
 # Evolution CMS
 site/*.php
 site/*.md
@@ -20,14 +28,7 @@ site/*.access
 site/*.lock
 site/*.txt
 
-!site/*.png
-!site/*.svg
-!site/*.ico
-!site/*.xml
-!site/*.webmanifest
-!site/robots.txt
 
-site/assets/templates/index.html
 site/vendor
 site/manager
 site/assets/*.*
@@ -49,11 +50,21 @@ site/assets/media
 site/assets/site
 site/assets/thumbs
 site/assets/vendor
+site/assets/templates/index.html
 
 site/assets/modules/*
 site/assets/plugins/*
 site/assets/snippets/*
 site/assets/tvs/*
+
+!site/.htaccess
+!site/*.png
+!site/*.svg
+!site/*.ico
+!site/*.xml
+!site/*.webmanifest
+!site/*.json
+!site/robots.txt
 
 # Templates
 !site/assets/templates/projectsot

@@ -1,12 +1,12 @@
 {
-	"name": "gbou_school",
-	"description": "Сайт ГБОУ ООШ с. Покровка",
+	"name": "spds_site",
+	"description": "Пересборка сайта под Evolution CMS",
 	"main": "Grunfile.js",
 	"authors": [
 		"ProjectSoft <projectsoft2009@yandex.ru>"
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/pokrovka-school/gbou-school",
+	"homepage": "https://github.com/domaska-school/spds_site",
 	"ignore": [
 		"**/.*",
 		"node_modules",
@@ -21,7 +21,7 @@
 		"normalize.css": "^8.0.1",
 		"slick-carousel": "^1.8.1",
 		"js-cookie": "^2.2.1",
-		"button-visually-impaired-javascript": "https://github.com/veks/button-visually-impaired-javascript.git#1.0",
+		"button-visually-impaired-javascript": "https://github.com/ProjectSoft-STUDIONIONS/button-visually-impaired-javascript.git#2.0.0",
 		"inputmask": "https://github.com/RobinHerbots/Inputmask.git#^5.0.8"
 	},
 	"devDependencies": {}

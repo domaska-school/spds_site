@@ -14,7 +14,7 @@
 }
 
 @font-face {
-  font-family: "Domashka";
+  font-family: "SPDS-Domashka";
   src: url("/assets/templates/projectsoft/fonts/domashka.woff?v1.0.0") format("woff"), url("/assets/templates/projectsoft/fonts/domashka.woff2?v1.0.0") format("woff2"), url("/assets/templates/projectsoft/fonts/domashka.ttf?v1.0.0") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -23,7 +23,7 @@
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "Domashka" !important;
+  font-family: "SPDS-Domashka" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -5918,15 +5918,6 @@ body .bvi-body[data-bvi-fontfamily='times']:not(i):not(span):not(.bvi-no-styles)
   font-family: "Times New roman", serif !important;
 }
 
-body .bvi-body[data-bvi-builtelements='true']:not(.bvi-no-styles) .wp-audio-shortcode,
-body .bvi-body[data-bvi-builtelements='true']:not(.bvi-no-styles) iframe,
-body .bvi-body[data-bvi-builtelements='true']:not(.bvi-no-styles) object,
-body .bvi-body[data-bvi-builtelements='true']:not(.bvi-no-styles) video,
-body .bvi-body[data-bvi-builtelements='true']:not(.bvi-no-styles) ymaps,
-body .bvi-body[data-bvi-builtelements='true']:not(.bvi-no-styles) figure {
-  display: block !important;
-}
-
 body .bvi-body[data-bvi-builtelements='false']:not(.bvi-no-styles) .wp-audio-shortcode,
 body .bvi-body[data-bvi-builtelements='false']:not(.bvi-no-styles) iframe,
 body .bvi-body[data-bvi-builtelements='false']:not(.bvi-no-styles) object,
@@ -5934,6 +5925,15 @@ body .bvi-body[data-bvi-builtelements='false']:not(.bvi-no-styles) video,
 body .bvi-body[data-bvi-builtelements='false']:not(.bvi-no-styles) ymaps,
 body .bvi-body[data-bvi-builtelements='false']:not(.bvi-no-styles) figure {
   display: none !important;
+}
+
+body .bvi-body[data-bvi-builtelements='true']:not(.bvi-no-styles) .wp-audio-shortcode,
+body .bvi-body[data-bvi-builtelements='true']:not(.bvi-no-styles) iframe,
+body .bvi-body[data-bvi-builtelements='true']:not(.bvi-no-styles) object,
+body .bvi-body[data-bvi-builtelements='true']:not(.bvi-no-styles) video,
+body .bvi-body[data-bvi-builtelements='true']:not(.bvi-no-styles) ymaps,
+body .bvi-body[data-bvi-builtelements='true']:not(.bvi-no-styles) figure {
+  display: block !important;
 }
 
 body .bvi-body .bvi-speech {

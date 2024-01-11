@@ -4,7 +4,9 @@ module.exports = function(grunt) {
 	const sass = require('node-sass'),
 		DEBUG = parseInt(process.env.DEBUG) || false,
 		VERSION = process.env.VERSION == undefined ? PACK.font_version : process.env.VERSION,
-		domAin = `domashka.school`,
+		font = `domashka`,
+		fontName = `SPDS-Domashka`,
+		domAin = `template.school`,
 		porT = `http`,
 		domain_url = `${porT}://${domAin}`;
 	var fs = require('fs'),
@@ -245,9 +247,9 @@ Sitemap: ${port}://${domain}/sitemap.xml
 					hashes: false,
 					relativeFontPath: '@{fontpath}',
 					destLess: 'src/less',
-					font: 'domashka',
+					font: font,
 					types: 'ttf',
-					fontFamilyName: 'Domashka',
+					fontFamilyName: fontName,
 					stylesheets: ['less'],
 					syntax: 'bootstrap',
 					engine: 'node',
@@ -552,7 +554,7 @@ Sitemap: ${port}://${domain}/sitemap.xml
 			}
 		}
 	});
-	grunt.registerTask('default',   ["clean:all", "robots", "concat", "uglify", "webfont", "ttf2woff", "ttf2woff2", "imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy", "pug"]);
+	grunt.registerTask('default',   ["clean:all", "realFavicon", "robots", "concat", "uglify", "webfont", "ttf2woff", "ttf2woff2", "imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy", "pug"]);
 	grunt.registerTask('favicon',   ["clean:favicon", "realFavicon"]);
 	grunt.registerTask('build',	    ["clean:build", "robots", "concat", "uglify", "imagemin", "tinyimg", "datauri", "sass", "less", "autoprefixer", "group_css_media_queries", "replace", "cssmin", "copy", "pug"]);
 }

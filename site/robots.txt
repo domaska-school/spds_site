@@ -13,6 +13,6 @@ Disallow: /install/
 
 Allow: /assets/cache/images/
 
-Host: domashka.school
+Host: template.school
 
-Sitemap: http://domashka.school/sitemap.xml
+Sitemap: http://template.school/sitemap.xml
