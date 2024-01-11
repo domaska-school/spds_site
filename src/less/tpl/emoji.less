@@ -1,0 +1,61 @@
+.emoji {
+	font-size: 2em;
+}
+ul {
+	&.emoji {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 0;
+		align-items: center;
+		justify-content: center;
+		.emoji {
+			&--item {
+				display: block;
+				position: relative;
+				margin: 5px;
+				border-radius: 5px;
+				overflow: hidden;
+				box-shadow: 0 0 1px #000;
+				background-color: white;
+				min-width: 3em;
+				&--icon {
+					transition: all .4s ease;
+					text-align: center;
+					width: 100%;
+					display: block;
+					position: relative;
+					padding: 10px 5px;
+					background-color: white;
+					user-select: none;
+					cursor: pointer;
+					&::before {
+						background-color: transparent;
+						display: block;
+						width: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						font-size: 14px;
+						line-height: 1;
+						content: attr(data-copy);
+					}
+					&.copy {
+						user-select: auto;
+					}
+					&:hover,
+					&.copy {
+						background-color: #0f0;
+					}
+					&.error {
+						&,
+						&:hover {
+							background-color: #f00;
+						}
+					}
+				}
+			}
+		}
+	}
+}

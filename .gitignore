@@ -4,7 +4,6 @@ temp
 test
 tests
 tmp
-site/*.*
 favicons.txt
 *.txt
 **/*.txt
@@ -21,6 +20,7 @@ favicons.txt
 .env.local
 
 # Evolution CMS
+site/*.*
 site/*.php
 site/*.md
 site/*.html
