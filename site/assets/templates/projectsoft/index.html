@@ -47,8 +47,8 @@
 		<!-- /Open Graph-->
 		<!-- /Page SEO-->
 		<!-- Style-->
-		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?212e4aa5b9edaad0ece9742a54807b6d">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?212e4aa5b9edaad0ece9742a54807b6d">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?031128d413f2bf732dd1a4d39b8bc7f2">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?031128d413f2bf732dd1a4d39b8bc7f2">
 		<!-- /Style-->
 		<!-- RSS-->
 		<link rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]rss.xml">
@@ -64,7 +64,11 @@
 			<div class="page-eye">Eye</div>
 			<div class="page-top">Top bar</div>
 			<div class="page-header">Header</div>
-			<div class="page-main">[*content*]</div>
+			<div class="page-main">
+				<header>
+					<h1>[*longtitle:ifempty=`[*pagetitle*]`*]</h1>
+				</header>[*content*]
+			</div>
 			<div class="page-footer">Footer</div>
 		</div>
 	</body>
