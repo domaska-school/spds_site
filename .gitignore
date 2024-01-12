@@ -85,9 +85,9 @@ site/assets/plugins/tinymce4/tinymce/plugins/*
 site/assets/plugins/tinymce4/tinymce/skins/*
 !site/assets/plugins/tinymce4/tinymce/skins/school
 
-# Plugin Pokrovka
-!site/assets/plugins/pokrovka
-!site/assets/plugins/pokrovka/*
+# Plugin Domashka
+!site/assets/plugins/domashka
+!site/assets/plugins/domashka/*
 
 # Module clientSettings
 !site/assets/modules/clientsettings
